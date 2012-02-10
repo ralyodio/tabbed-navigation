@@ -7,4 +7,5 @@
 .tabbed .tabs a { padding: 5px 10px; text-decoration: none; }
 .tabbed .tabs .active a { margin-bottom: -1px; border-bottom: 1px solid white; }
 .tabbed .contents { border: 1px solid black; border-radius: 5px; }
-.tabbed .content { padding: 20px; }
+.tabbed .content { display: none; padding: 20px; }
+.tabbed .content:first-child { display: block; }

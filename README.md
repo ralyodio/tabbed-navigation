@@ -1,7 +1,7 @@
 jQuery.tabbed() navigation
 ===========
 
-jQuery.tabbed() navigation is light-weight jQuery plugin for handling tabbed navigation with minimal markup.
+jQuery.tabbed() navigation is a light-weight jQuery plugin for handling tabbed navigation with minimal markup.
 
 Demo
 ----
@@ -37,7 +37,8 @@ Usage
 	</script>
 
 
+
 Requirements
 ------------
 
-jQuery (tested with 1.4, 1.6.2, 1.7.1) http://jquery.com
+jQuery http://jquery.com (tested with jQuery 1.4, 1.6.2, 1.7.1, Firefox 10, Safari 5.1, Chrome 17, Opera 11)
