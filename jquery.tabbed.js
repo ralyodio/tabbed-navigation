@@ -6,7 +6,7 @@
 				var obj = $(this);
 
 				var tabs = $('.tabs li', obj),
-				tabContents = $('.contents .content', obj);
+						tabContents = $('.contents .content', obj);
 
 				//make the first tab active
 				tabs.removeClass('active');
