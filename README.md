@@ -1,4 +1,4 @@
-tabbed-navigation
+jQuery tabbed-navigation
 ===========
 
 tabbed-navigation is light-weight jQuery plugin for handling tabbed navigation with minimal markup.
@@ -28,9 +28,7 @@ Usage
 		</div>
 	</div>
 	...
-	<!-- include jquery first -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<!-- include tabbed-navigation plugin after -->
 	<script src="jquery.tabbed.js"></script>
 	<script>
 	$(function(){
@@ -42,4 +40,4 @@ Usage
 Requirements
 ------------
 
-jQuery (tested with 1.7.1) 
+jQuery (tested with 1.4, 1.6.2, 1.7.1) 
