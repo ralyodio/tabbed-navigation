@@ -36,7 +36,7 @@ Usage
 	});
 	</script>
 
-
+Paste the above code in your document.
 
 Requirements
 ------------
