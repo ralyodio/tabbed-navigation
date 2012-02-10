@@ -40,4 +40,4 @@ Usage
 Requirements
 ------------
 
-jQuery (tested with 1.4, 1.6.2, 1.7.1) 
+jQuery (tested with 1.4, 1.6.2, 1.7.1) http://jquery.com
