@@ -1,0 +1,40 @@
+{
+    "name": "tabbed-navigation",
+    "version": ".01",
+    "title": "jQuery.tabbed()",
+    "author": {
+        "name": "Anthony Ettinger",
+        "url": "https://github.com/chovy"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        },
+        {
+            "type": "GPLv2",
+            "url": "GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1.4"
+    },
+    "description": "tabbed-navigation is light-weight jQuery plugin for handling tabbed navigation with minimal markup.",
+    "keywords": [
+        "tabs",
+        "tabbed",
+        "navigation",
+        "plugin"
+    ],
+    "homepage": "https://github.com/chovy/tabbed-navigation",
+    "maintainers": [
+        {
+            "name": "Anthony Ettinger",
+            "url": "https://github.com/chovy"
+        }
+    ],
+    "files": [
+        "jquery.tabbed.js",
+        "jquery.tabbed.css",
+    ]
+}
