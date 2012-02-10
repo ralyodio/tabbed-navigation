@@ -1,0 +1,10 @@
+.tabbed .tabs:after, .clfx:after { content: '.'; display: block; visibility: hidden; overflow: hidden; clear: both; font-size: 0; height: 0; }
+
+.tabbed { }
+.tabbed .tabs, .tabbed .tabs li, .tabbed .tabs a { display: block; }
+.tabbed .tabs { list-style-type: none; padding-left: 20px; }
+.tabbed .tabs li { border: 1px solid black; border-radius: 5px 5px 0 0; float: left; border-bottom: none; margin-right: 10px; }
+.tabbed .tabs a { padding: 5px 10px; text-decoration: none; }
+.tabbed .tabs .active a { margin-bottom: -1px; border-bottom: 1px solid white; }
+.tabbed .contents { border: 1px solid black; border-radius: 5px; }
+.tabbed .content { padding: 20px; }

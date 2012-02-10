@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>jQuery Plugin - Tabbed Navigation</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+	<link href="tabbed.css" rel="stylesheet" type="text/css" media="screen" />
+	<style>
+		html, html * { margin: 0; padding: 0; }
+		.clfx:after { content: '.'; display: block; visibility: hidden; overflow: hidden; clear: both; font-size: 0; height: 0; }
+		header, article, section, footer, nav { display: block; }
+
+		body { background: #fff; font-family: arial, helvetica, sans-serif; font-size: 12px; margin: 1% 2%; }
+		#example { width: 400px; }
+
+	</style>
+</head>
+<body>
+	<section id="example">
+		<div class="tabbed">
+			<ul class="tabs">
+				<li><a href="#foo">Foo</a></li>
+				<li><a href="#bar">Bar</a></li>
+				<li><a href="#baz">Baz</a></li>
+			</ul>
+			<div class="contents">
+				<div class="content" id="foo">Foo content</div>
+				<div class="content" id="bar">Bar content</div>
+				<div class="content" id="baz">Baz content</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<small>Copyright &copy; 2012 Anthony Ettinger</small>
+	</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="tabbed.js"></script>
+<script>
+var log = function(){
+	var w = window;
+	return {
+		add: function(m) { w.console && w.console.log(m) },
+		js: function() { w.console && w.console.profile() },  
+		jsEnd: function() { w.console && w.console.profileEnd() },
+		prof: function(code) {
+			if ( w.console ) {
+				console.profile();
+				try { code() } catch(err) { };
+				console.profileEnd();
+			}
+		}
+	}
+}();
+</script>
+<script>
+$(function(){
+	$(".tabbed").tabbed();
+});
+</script>
+</body>
+</html>
+
