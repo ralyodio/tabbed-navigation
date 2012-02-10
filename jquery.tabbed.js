@@ -16,7 +16,9 @@
 				tabContents.hide();
 				tabContents.eq(0).show();
 
-				tabs.click(function() {
+				tabs.click(function(e) {
+
+					e.preventDefault();
 
 					//Make new tab active
 					tabs.removeClass("active");

@@ -13,6 +13,10 @@ Usage
 
 	<head>
 		<link href="jquery.tabbed.css" rel="stylesheet" type="text/css" media="screen" />
+		<!--[if IE]>
+			<link href="jquery.tabbed.ie.css" rel="stylesheet" type="text/css" media="screen" />
+		<![endif]-->
+
 	</head>
 	...
 	<div class="tabbed">
@@ -41,4 +45,4 @@ Paste the above code in your document.
 Requirements
 ------------
 
-jQuery http://jquery.com (tested with jQuery 1.4, 1.6.2, 1.7.1, Firefox 10, Safari 5.1, Chrome 17, Opera 11)
+jQuery http://jquery.com (tested with jQuery 1.4, 1.6.2, 1.7.1, Firefox 10, Safari 5.1, Chrome 17, Opera 11, IE 7/8/9)
