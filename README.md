@@ -12,7 +12,7 @@ Usage
 -----
 
 	<head>
-		<link href="tabbed.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="jquery.tabbed.css" rel="stylesheet" type="text/css" media="screen" />
 	</head>
 	...
 	<div class="tabbed">
