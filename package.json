@@ -17,7 +17,7 @@
         }
     ],
     "dependencies": {
-        "jquery": "1.4"
+        "jquery": "1"
     },
     "description": "tabbed-navigation is light-weight jQuery plugin for handling tabbed navigation with minimal markup.",
     "keywords": [
