@@ -36,5 +36,6 @@
     "files": [
         "jquery.tabbed.js",
         "jquery.tabbed.css",
+        "jquery.tabbed.ie.css",
     ]
 }
