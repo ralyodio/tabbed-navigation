@@ -18,6 +18,8 @@
 
 				tabs.click(function(e) {
 
+					var current = tabs.index($(this));
+
 					e.preventDefault();
 
 					//Make new tab active
@@ -26,7 +28,6 @@
 
 					//Show new tab content
 					tabContents.hide();
-					var current = tabs.index($(this));
 					tabContents.eq(current).show();
 				});
 			});
