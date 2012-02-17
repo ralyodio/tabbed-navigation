@@ -16,7 +16,8 @@
 			}, opts);
 
 			return this.each(function() {
-				var obj = $(this);
+				var url = [],
+						obj = $(this);
 
 				var tabs = $('.tabs li', obj),
 						tabContents = $('.contents .content', obj);
@@ -24,15 +25,23 @@
 				//make the first tab active
 				tabs.removeClass('active');
 				tabs.eq(0).addClass("active");
+				url = tabs.eq(0).find('a').attr('href').split('#');
 
 				//hide all but the first tab contents
 				tabContents.hide();
+
+				//we have a url, do ajax call
+				if ( url[0] ) {
+					tabContents.eq(0).load(url[0]);
+				}
+
 				tabContents.eq(0).show();
 
 				//handle the tab clicks
 				tabs.click(function(e) {
 
-					var current = tabs.index($(this));
+					var current = tabs.index($(this)),
+							url = $(this).find('a').attr('href').split('#');
 
 					e.preventDefault();
 
@@ -42,6 +51,12 @@
 
 					//show new tab content
 					tabContents.hide();
+
+					//we have a url, do ajax call
+					if ( url[0] ) {
+						tabContents.eq(current).load(url[0]);
+					}
+
 					tabContents.eq(current).show();
 				});
 			});

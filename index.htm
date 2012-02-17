@@ -20,6 +20,7 @@
 		h2 { margin: 10px 0; }
 		#example { width: 400px; margin: 50px; }
 		footer { margin-top: 20px; }
+		.tabbed { margin: 40px 0; }
 
 	</style>
 </head>
@@ -29,6 +30,7 @@
 	<p>jQuery.tabbed() navigation is a light-weight jQuery plugin for handling tabbed navigation with minimal markup.</p>
 
 	<section id="example">
+		<h1>Static</h1>
 		<div class="tabbed">
 			<ul class="tabs">
 				<li><a href="#foo">Foo</a></li>
@@ -36,11 +38,42 @@
 				<li><a href="#baz">Baz</a></li>
 			</ul>
 			<div class="contents">
-				<div class="content" id="foo">Foo content</div>
-				<div class="content" id="bar">Bar content</div>
-				<div class="content" id="baz">Baz content</div>
+				<div class="content" id="foo">Foo static content</div>
+				<div class="content" id="bar">Bar static content</div>
+				<div class="content" id="baz">Baz static content</div>
 			</div>
 		</div>
+
+		<h1>Ajax</h1>
+		<div class="tabbed">
+			<ul class="tabs">
+				<li><a href="ajax/content.php?tab=foo">Foo</a></li>
+				<li><a href="ajax/content.php?tab=bar">Bar</a></li>
+				<li><a href="ajax/content.php?tab=baz">Baz</a></li>
+			</ul>
+			<div class="contents">
+				<div class="content" id="foo"></div>
+				<div class="content" id="bar"></div>
+				<div class="content" id="baz"></div>
+			</div>
+		</div>
+
+		<h1>Mixed</h1>
+		<div class="tabbed">
+			<ul class="tabs">
+				<li><a href="#foo">Foo</a></li>
+				<li><a href="ajax/content.php?tab=bar">Bar</a></li>
+				<li><a href="ajax/content.php?tab=baz">Baz</a></li>
+				<li><a href="#biz">Biz</a></li>
+			</ul>
+			<div class="contents">
+				<div class="content" id="foo">Foo static content</div>
+				<div class="content" id="bar"></div>
+				<div class="content" id="baz"></div>
+				<div class="content" id="biz">Biz static content</div>
+			</div>
+		</div>
+
 	</section>
 
 	<p>View source to see examples.</p>
