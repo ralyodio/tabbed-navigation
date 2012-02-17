@@ -22,12 +22,12 @@ Usage
 	<div class="tabbed">
 		<ul class="tabs">
 			<li><a href="#foo">Foo</a></li>
-			<li><a href="#bar">Bar</a></li>
+			<li><a href="ajax/content.php?tab=bar">Bar</a></li>
 			<li><a href="#baz">Baz</a></li>
 		</ul>
 		<div class="contents">
 			<div class="content" id="foo">Foo content</div>
-			<div class="content" id="bar">Bar content</div>
+			<div class="content" id="bar"></div>
 			<div class="content" id="baz">Baz content</div>
 		</div>
 	</div>
