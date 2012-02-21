@@ -1,0 +1,22 @@
+/*!
+ * jQuery.tabbed() v1.0.2
+ * https://github.com/chovy/tabbed-navigation 
+ *
+ * Copyright 2012, Anthony Ettinger
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ *
+ * Date: Tue Feb 14 19:48:04 PST 2012
+ */
+.tabbed .tabs:after, .clfx:after { content: '.'; display: block; visibility: hidden; overflow: hidden; clear: both; font-size: 0; height: 0; }
+
+.tabbed { }
+.tabbed .tabs, .tabbed .tabs li, .tabbed .tabs a { display: block; }
+.tabbed .tabs { list-style-type: none; padding-left: 20px; }
+.tabbed .tabs li { border: 1px solid black; border-radius: 5px 5px 0 0; float: left; border-bottom: none; margin-right: 10px; }
+.tabbed .tabs a { padding: 5px 10px; text-decoration: none; }
+.tabbed .tabs a, .tabbed .tabs a:active, .tabbed .tabs a:focus { outline: none; }
+.tabbed .tabs .active a { margin-bottom: -1px; border-bottom: 1px solid white; }
+.tabbed .contents { border: 1px solid black; border-radius: 5px; }
+.tabbed .content { display: none; padding: 20px; }
+.tabbed .content:first-child { display: block; }
+.tabbed .content.loading { background: url('img/loading.gif') no-repeat 50% 50%; }
