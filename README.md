@@ -42,6 +42,11 @@ Usage
 
 Paste the above code in your document.
 
+Download
+--------
+
+http://github.com/downloads/chovy/tabbed-navigation/jquery.tabbed-1.0.2.tgz
+
 Requirements
 ------------
 
