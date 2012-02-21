@@ -1,5 +1,5 @@
 /*!
- * jQuery.tabbed() v1.0.1
+ * jQuery.tabbed() v1.0.2
  * https://github.com/chovy/tabbed-navigation 
  *
  * Copyright 2012, Anthony Ettinger
@@ -19,3 +19,4 @@
 .tabbed .contents { border: 1px solid black; border-radius: 5px; }
 .tabbed .content { display: none; padding: 20px; }
 .tabbed .content:first-child { display: block; }
+.tabbed .content.loading { background: url('img/loading.gif') no-repeat 50% 50%; }

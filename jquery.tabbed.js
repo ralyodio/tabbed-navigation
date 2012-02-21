@@ -1,5 +1,5 @@
 /*!
- * jQuery.tabbed() v1.0.1
+ * jQuery.tabbed() v1.0.2
  * https://github.com/chovy/tabbed-navigation 
  *
  * Copyright 2012, Anthony Ettinger
@@ -15,49 +15,46 @@
 			var opts = $.extend({
 			}, opts);
 
-			return this.each(function() {
-				var url = [],
-						obj = $(this);
-
-				var tabs = $('.tabs li', obj),
-						tabContents = $('.contents .content', obj);
+			var activateTab = function( tab, tabContent, tabs, tabContents ){
+				var url = tab.find('a').attr('href').split('#');
 
 				//make the first tab active
 				tabs.removeClass('active');
-				tabs.eq(0).addClass("active");
-				url = tabs.eq(0).find('a').attr('href').split('#');
+				tab.addClass("active");
 
 				//hide all but the first tab contents
 				tabContents.hide();
 
 				//we have a url, do ajax call
 				if ( url[0] ) {
-					tabContents.eq(0).load(url[0]);
+					tabContent.html('');
+					tabContent.show();
+					tabContent.addClass('loading').load(url[0], function(){
+						tabContent.removeClass('loading');
+					});
+				} else {
+					tabContent.show();
 				}
+			};
 
-				tabContents.eq(0).show();
+			return this.each(function() {
+				var obj = $(this);
+				var tabs = $('.tabs li', obj),
+						tabContents = $('.contents .content', obj),
+						firstTab = tabs.eq(0),
+						firstContent = tabContents.eq(0);
+
+				activateTab(firstTab, firstContent, tabs, tabContents);
 
 				//handle the tab clicks
 				tabs.click(function(e) {
 
 					var current = tabs.index($(this)),
-							url = $(this).find('a').attr('href').split('#');
+							currentContent = tabContents.eq(current);
 
 					e.preventDefault();
 
-					//make new tab active
-					tabs.removeClass("active");
-					$(this).addClass("active");
-
-					//show new tab content
-					tabContents.hide();
-
-					//we have a url, do ajax call
-					if ( url[0] ) {
-						tabContents.eq(current).load(url[0]);
-					}
-
-					tabContents.eq(current).show();
+					activateTab( $(this), currentContent, tabs, tabContents );
 				});
 			});
 		}
