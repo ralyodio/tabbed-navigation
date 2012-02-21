@@ -5,7 +5,7 @@
  * Copyright 2012, Anthony Ettinger
  * Dual licensed under the MIT or GPL Version 2 licenses.
  *
- * Date: Tue Feb 14 19:48:04 PST 2012
+ * Date: Tue Feb 21 10:22:23 PST 2012
  */
 (function($){
 	$.fn.extend({ 
