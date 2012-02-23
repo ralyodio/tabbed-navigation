@@ -17,6 +17,6 @@
 .tabbed .tabs a, .tabbed .tabs a:active, .tabbed .tabs a:focus { outline: none; }
 .tabbed .tabs .active a { margin-bottom: -1px; border-bottom: 1px solid white; }
 .tabbed .contents { border: 1px solid black; border-radius: 5px; }
-.tabbed .content { display: none; padding: 20px; }
+.tabbed .content { display: none; padding: 20px; min-height: 20px; }
 .tabbed .content:first-child { display: block; }
 .tabbed .content.loading { background: url('img/loading.gif') no-repeat 50% 50%; }
