@@ -1,37 +1,34 @@
 {
-    "name": "tabbed-navigation",
-    "version": "1.0.2",
-    "title": "jQuery.tabbed()",
-    "author": {
-        "name": "Anthony Ettinger",
-        "url": "https://github.com/chovy"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "LICENSE"
-        }
-    ],
-    "dependencies": {
-        "jquery": "1"
-    },
-    "description": "jQuery.tabbed() navigation is a light-weight jQuery plugin for handling tabbed navigation with minimal markup.",
-    "keywords": [
-        "tabs",
-        "tabbed",
-        "navigation",
-        "plugin"
-    ],
-    "homepage": "https://github.com/chovy/tabbed-navigation",
-    "maintainers": [
-        {
-            "name": "Anthony Ettinger",
-            "url": "https://github.com/chovy"
-        }
-    ],
-    "files": [
-        "jquery.tabbed.js",
-        "jquery.tabbed.css",
-        "jquery.tabbed.ie.css",
-    ]
+  "name": "tabbed-navigation",
+	"title": "jQuery.tabbed()",
+	"description": "jQuery.tabbed() navigation is a light-weight jQuery plugin for handling tabbed navigation with minimal markup.",
+  "version": "0.1.0",
+	"homepage": "https://github.com/chovy/tabbed-navigation",
+  "author": {
+		"name": "Anthony Ettinger",
+    "email": "anthony@ettinger.name",
+		"url": "https://github.com/chovy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chovy/tabbed-navigation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chovy/tabbed-navigation/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/chovy/tabbed-navigation/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.4"
+  },
+  "keywords": [
+		"tabs",
+		"tabbed",
+		"navigation",
+		"plugin"
+	]
 }
