@@ -6,7 +6,7 @@ jQuery.tabbed() navigation is a light-weight jQuery plugin for handling tabbed n
 Demo
 ----
 
-http://chovy.dyndns.org/jquery/tabbed-navigation/
+http://chovy.us.to/jquery/tabbed-navigation/
 
 Usage
 -----
